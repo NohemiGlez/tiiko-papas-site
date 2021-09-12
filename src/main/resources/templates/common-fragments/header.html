@@ -1,0 +1,26 @@
+<nav th:fragment="header">
+    <div class="nav-wrapper white grey-text text-darken-3">
+        <a href="#!" class="brand-logo">
+            <img alt="tiiko papas site icon"
+                 th:src="${imagesHostUrl} + '/c_scale,w_130/v1631325352/tiikopapas-horizontal-logo.png'">
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <div class="input-field">
+                    <input type="text" id="search-autocomplete-input" class="autocomplete" >
+                    <a id="search-link" href="#">
+                        <i id="search-icon" class="material-icons prefix grey-text text-darken-3">search</i>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a class="dropdown-trigger" href="#" data-target="languages"><i class="material-icons grey-text text-darken-3">language</i></a>
+                <ul id="languages" class="dropdown-content">
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                </ul>
+            </li>
+            <li><a href="mobile.html"><i class="material-icons grey-text text-darken-3">menu</i></a></li>
+        </ul>
+    </div>
+</nav>

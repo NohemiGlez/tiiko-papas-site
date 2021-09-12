@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.tiikopapas</groupId>
 	<artifactId>site</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>site</name>
 	<description>Comics, drawings and writing projects</description>
