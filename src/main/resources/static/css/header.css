@@ -1,4 +1,20 @@
+body {
+    background-color: #FBFCFF;
+}
+
+.text, p, i {
+    color: #2F2F2F;
+}
+
 #search-icon {
     margin-top: -7px;
     margin-left: 117px;
+}
+#search-autocomplete-input:focus {
+    border-bottom: 1px solid #D7B44C;
+    box-shadow: 0 1px 0 0 #D7B44C;
+}
+
+.not-clickable {
+    cursor: default;
 }

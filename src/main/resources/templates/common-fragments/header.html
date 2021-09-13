@@ -9,18 +9,20 @@
                 <div class="input-field">
                     <input type="text" id="search-autocomplete-input" class="autocomplete" >
                     <a id="search-link" href="#">
-                        <i id="search-icon" class="material-icons prefix grey-text text-darken-3">search</i>
+                        <i id="search-icon" class="material-icons prefix text">search</i>
                     </a>
                 </div>
             </li>
             <li>
-                <a class="dropdown-trigger" href="#" data-target="languages"><i class="material-icons grey-text text-darken-3">language</i></a>
+                <a class="dropdown-trigger" href="#" data-target="languages"><i class="material-icons text">language</i></a>
                 <ul id="languages" class="dropdown-content">
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
+                    <li><a class="not-clickable" href="#!" th:text="#{language.change}"></a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a id="es" href="#!" th:text="#{language.es}" class="select-lang"></a></li>
+                    <li><a id="en" href="#!" th:text="#{language.us}" class="select-lang"></a></li>
                 </ul>
             </li>
-            <li><a href="mobile.html"><i class="material-icons grey-text text-darken-3">menu</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons text">menu</i></a></li>
         </ul>
     </div>
 </nav>
