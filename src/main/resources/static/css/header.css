@@ -1,9 +1,13 @@
-body {
+body, .ghost-white {
     background-color: #FBFCFF;
 }
 
 .text, p, i {
     color: #2F2F2F;
+}
+
+a {
+    color: #D7B44C;
 }
 
 #search-icon {
@@ -17,4 +21,29 @@ body {
 
 .not-clickable {
     cursor: default;
+}
+
+a.sidenav-trigger {
+    display: block !important;
+}
+
+nav ul a {
+    padding: 0 6px;
+}
+
+nav .brand-logo {
+    padding: 0 12px;
+}
+
+.social-media-icons {
+    margin-left: 26px;
+    margin-top: 30px;
+}
+
+.social-media {
+    margin: 6px;
+}
+
+.sidenav-footer {
+    margin-top: 10px;
 }

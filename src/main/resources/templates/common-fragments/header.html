@@ -1,28 +1,79 @@
-<nav th:fragment="header">
-    <div class="nav-wrapper white grey-text text-darken-3">
-        <a href="#!" class="brand-logo">
-            <img alt="tiiko papas site icon"
-                 th:src="${imagesHostUrl} + '/c_scale,w_130/v1631325352/tiikopapas-horizontal-logo.png'">
-        </a>
-        <ul class="right hide-on-med-and-down">
-            <li>
-                <div class="input-field">
-                    <input type="text" id="search-autocomplete-input" class="autocomplete" >
-                    <a id="search-link" href="#">
-                        <i id="search-icon" class="material-icons prefix text">search</i>
-                    </a>
+<th:block th:fragment="header">
+    <nav id="header">
+        <div class="nav-wrapper white grey-text text-darken-3">
+            <a href="#!" class="brand-logo">
+                <img alt="tiiko papas site icon"
+                     th:src="${imagesHostUrl} + '/c_scale,w_130/v1631325352/icons/tiikopapas-horizontal-logo.png'">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="input-field">
+                        <input type="text" id="search-autocomplete-input" class="autocomplete">
+                        <a id="search-link" href="#">
+                            <i id="search-icon" class="material-icons prefix text">search</i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a class="dropdown-trigger" href="#" data-target="languages"><i
+                            class="material-icons text">language</i></a>
+                    <ul id="languages" class="dropdown-content">
+                        <li><a class="not-clickable" href="#!" th:text="#{language.change}"></a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a id="es" href="#!" th:text="#{language.es}" class="select-lang"></a></li>
+                        <li><a id="en" href="#!" th:text="#{language.us}" class="select-lang"></a></li>
+                    </ul>
+                </li>
+                <li><a id="menu" href="#!" data-target="slide-out" class="sidenav-trigger"><i
+                        class="material-icons text">menu</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img th:src="${imagesHostUrl} + '/c_scale,w_600/v1632117001/backgrounds/potatoes.jpg'">
                 </div>
-            </li>
-            <li>
-                <a class="dropdown-trigger" href="#" data-target="languages"><i class="material-icons text">language</i></a>
-                <ul id="languages" class="dropdown-content">
-                    <li><a class="not-clickable" href="#!" th:text="#{language.change}"></a></li>
-                    <li class="divider" tabindex="-1"></li>
-                    <li><a id="es" href="#!" th:text="#{language.es}" class="select-lang"></a></li>
-                    <li><a id="en" href="#!" th:text="#{language.us}" class="select-lang"></a></li>
-                </ul>
-            </li>
-            <li><a href="mobile.html"><i class="material-icons text">menu</i></a></li>
-        </ul>
-    </div>
-</nav>
+                <a href="#user"><img class="circle"
+                                     th:src="${imagesHostUrl} + '/c_fit,w_64/v1631321808/icons/tiikopapas-icon.png'"></a>
+                <a href="#name"><span class="white-text name">Tiiko Papas</span></a>
+                <a href="#email"><span class="white-text email">tiiko.papas.xd@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#comics" th:text="#{menu.comics}"></a></li>
+        <li><a href="#tales" th:text="#{menu.tales}"></a></li>
+        <li><a href="#novels" th:text="#{menu.novels}"></a></li>
+        <li><a href="#portraits" th:text="#{menu.portraits}"></a></li>
+        <li><a href="#ocs" th:text="#{menu.ocs}"></a></li>
+        <li><a href="#fanarts" th:text="#{menu.fanarts}"></a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="contact.html" th:text="#{menu.contact}"></a></li>
+        <div class="social-media-icons">
+            <a class="social-media" href="https://www.facebook.com/tiikopapaselblog" target="_blank"><img
+                    th:src="${imagesHostUrl} + '/c_scale,w_23/v1632195202/icons/facebook_icon.png'"></a>
+            <a class="social-media" href="https://www.youtube.com/user/TiikoPapasxD" target="_blank"><img
+                    th:src="${imagesHostUrl} + '/c_scale,w_30/v1632195202/icons/youtube_icon.png'"></a>
+            <a class="social-media" href="https://www.instagram.com/tiikopapas/" target="_blank"><img
+                    th:src="${imagesHostUrl} + '/c_scale,co_rgb:4b3b12,e_colorize:100,w_24/v1632195202/icons/instagram_icon.png'"></a>
+            <a class="social-media" href="https://www.tiktok.com/@tiikopapas" target="_blank"><img
+                    th:src="${imagesHostUrl} + '/c_scale,co_rgb:4b3b12,e_colorize:100,w_22/v1632195202/icons/tiktok_icon.png'"></a>
+            <a class="social-media" href="https://www.wattpad.com/user/Tiiko_Papas" target="_blank"><img
+                    th:src="${imagesHostUrl} + '/c_scale,w_30/v1632195202/icons/wattpad_icon.png'"></a>
+            <a class="social-media" href="https://twitter.com/tiiko_papas" target="_blank"><img
+                    th:src="${imagesHostUrl} + '/c_scale,w_24/v1632195202/icons/twitter_icon.png'"></a>
+        </div>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <div class="sidenav-footer center-align">
+            <small class="grey-text text-darken-3">
+                <div>Tiiko Papas 2021</div>
+                <a href="https://github.com/NohemiGlez/tiiko-papas-site" th:text="#{menu.developed}"
+                   target="_blank"></a>
+            </small>
+        </div>
+    </ul>
+</th:block>
