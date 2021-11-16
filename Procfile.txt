@@ -1,1 +1,0 @@
-web: java -jar target/site-0.0.1.jar
