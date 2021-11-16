@@ -46,6 +46,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<mainClass>controller.HomeController</mainClass>
+					<layout>ZIP</layout>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -53,6 +55,13 @@
 						</exclude>
 					</excludes>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>com.heroku.sdk</groupId>
