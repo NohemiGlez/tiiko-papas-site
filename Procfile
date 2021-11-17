@@ -1,1 +1,1 @@
-web: java -jar --port $PORT target/site-0.0.1-SNAPSHOT.war
+web: java -Dserver.port=$PORT -jar target/site-0.0.1-SNAPSHOT.war
