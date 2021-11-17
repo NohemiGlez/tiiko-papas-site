@@ -53,10 +53,10 @@
 					<appName>tiikopapasart</appName>
 					<includeTarget>false</includeTarget>
 					<includes>
-						<include>target/my-app-1.0.jar</include>
+						<include>target/site-0.0.1-SNAPSHOT.jar</include>
 					</includes>
 					<processTypes>
-						<web>java -jar target/my-app-1.0.jar</web>
+						<web>java -jar target/site-0.0.1-SNAPSHOT.jar</web>
 					</processTypes>
 				</configuration>
 			</plugin>
