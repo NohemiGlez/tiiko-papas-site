@@ -79,9 +79,7 @@
 					<execution>
 						<id>clean-jar-artifacts</id>
 						<phase>install</phase>
-						<goals>
-							<goal>clean</goal>
-						</goals>
+						<goals><goal>clean</goal></goals>
 						<configuration>
 							<excludeDefaultDirectories>true</excludeDefaultDirectories>
 							<filesets>
@@ -89,7 +87,6 @@
 									<directory>target</directory>
 									<excludes>
 										<exclude>*.war</exclude>
-										<exclude>dependency/*.jar</exclude>
 									</excludes>
 								</fileset>
 							</filesets>
