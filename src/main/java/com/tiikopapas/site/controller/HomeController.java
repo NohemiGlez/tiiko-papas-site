@@ -19,6 +19,6 @@ public class HomeController {
     public String getHome(Model model){
         String imagesHostUrl = systemPropertiesService.getImagesHostUrl();
         model.addAttribute("imagesHostUrl", imagesHostUrl);
-        return "/home/index.html";
+        return "home/index.html";
     }
 }
